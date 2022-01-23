@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <a href="#" class="header-links">Hakkında</a>
+            <a href="#" class="header-links">Mağaza</a>
+        </nav>
+        <nav class="header-right">
+            <a href="#" class="header-links">Gmail</a>
+            <a href="#" class="header-links">Resimler</a>
+            <a href="" class="header-links"><img src="./images/appicon.png" alt="application_icon"></a> 
+            <button class="sign-in">Giriş</button>
+        </nav>
+    </header>
+    
+    <main>
+        <img id="google" src="./images/googlelogo.png" alt="google logo">
+
+        <div class="search-bar">
+
+            <input type="text" name="search-bar" id="search">
+
+            <img id="mag" src="./images/magnifying_glass.jpg" alt="search-icon">
+
+            <a href="#">
+                <img src="./images/google_microphone.png" alt="microphone" id="microphone">
+            </a>
+        </div>
+
+        <div id="btn-container">
+            
+            <a class="btn1-link" target="_blank"><button id="btn1" type="button"> Google Araması</button></a>
+            
+            <button id="btn2" type="button" name="button">Kendimi Şanslı Hissediyorum</button>
+        </div>
+        
+        <div class="lang">
+            <p id="language">Arama Yapabileceğiniz Diğer Diller: <a href="./index.html">English</a></p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="country">Türkiye</div>
+        <nav class="footer-left">
+            <a href="#" class="footer-links">Reklam</a>
+            <a href="#" class="footer-links">İşletme</a>
+            <a href="#" class="footer-links">Arama Nasıl Çalışır?</a>
+        </nav>
+
+        <nav class="footer-right">
+            <a href="#" class="footer-links">Gizlilik</a>
+            <a href="#" class="footer-links">Şartlar</a>
+            <a href="#" class="footer-links">Ayarlar</a>
+
+        </nav>
+    </footer>
+    
+    <script>
+        let q = document.getElementById("search");
+        document.getElementById('btn1').onclick = function() {
+            window.open('http://google.com/search?q='+q.value);
+        };
+    </script>
+</body>
+</html>
