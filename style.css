@@ -9,24 +9,23 @@ body{
 }
 header{
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header-left{
-    float: left;
     opacity: 0.8;
 }
 
 .header-right{
-    float: right;
-    margin-right: 25px;
+    margin-right: 5px;
 }
 .header-links {
     color: black;
 }
 
-nav a {
+nav a{
     text-decoration: none;
     margin-left: 0.75em;
     margin-right: 0.75em;
@@ -57,6 +56,7 @@ a:hover{
 }
 .sign-in:hover{
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 0px 1px;
 }
 
 #google{
@@ -75,6 +75,7 @@ a:hover{
     position: relative;
     top: 10px;
     right: 510px;
+    cursor: pointer;
 }
 main{
     clear: both;
@@ -98,7 +99,7 @@ main{
 }
 
 #search:hover{
-    box-shadow: 3px 3px 3px lightgray;
+    box-shadow: rgb(211, 211, 211) 3px 3px 5px 0px;
 }
 
 #search:focus {
@@ -110,6 +111,7 @@ main{
     top: 5px;
     right: 75px;
     height: 20px;
+    cursor: pointer;
 }
 
 #btn-container {
@@ -172,7 +174,7 @@ main{
     font-size: 14px;
     /* border-top: 1px solid #e4e4e4; */
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
   }
   
 .country {
